@@ -1,0 +1,12 @@
+{% extends 'inventory/base.html' %}
+
+{% block title %}Home - CRM Inventory{% endblock %}
+
+{% block content %}
+<div class="container text-center">
+    <h1>Welcome to CRM Inventory</h1>
+    <p class="lead">Manage your inventory efficiently with our simple CRM system.</p>
+    <a href="{% url 'item_list' %}" class="btn btn-primary">View Inventory</a>
+    <a href="{% url 'item_create' %}" class="btn btn-success">Add New Item</a>
+</div>
+{% endblock %}
